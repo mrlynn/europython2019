@@ -2,6 +2,10 @@
 __pycache__/
 *.py[cod]
 *$py.class
+# MongoDB
+mongodb-compass*
+mongodb*tgz
+mongodb*msi
 
 # C extensions
 *.so
