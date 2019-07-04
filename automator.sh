@@ -1,3 +1,7 @@
+# Open Automator
+# Click Folder Action
+# Add a folder action for /Volumes
+# Place this script in the text box
 RSYNC=/usr/local/bin/rsync
 RSYNCOPT=-avhs
 LOGFILE=~/projects/university-courses/m220p/rsync.log

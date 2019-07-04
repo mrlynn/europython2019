@@ -2,12 +2,10 @@
 DOWNLOADDIR=./usbdrive/requirements/
 COMPASSDIR=./usbdrive/mongodb/compass
 MONGODBDIR=./usbdrive/mongodb/server
-rm -rf $DOWNLOADDIR
-rm -rf $COMPASSDIR
-rm -rf $MONGODBDIR
-mkdir -p $DOWNLOADDIR
-mkdir -p $COMPASSDIR
-mkdir -p $MONGODBDIR
-echo "# TODO" > $DOWNLOADDIR/README.md
-echo "# TODO" > $COMPASSDIR/README.md
-echo "# TODO" > $MONGODBDIR/README.md
+PYTHONDIR=./usbdrive/python
+for ddir in $DOWNLOADDIR $COMPASSDIR $MONGODBDIR $PYTHONDIR; do
+  echo $ddir
+  rm -rf $ddir
+  mkdir -p $ddir
+  echo "# Preserve" > $ddir/README.md
+done
