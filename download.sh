@@ -1,4 +1,6 @@
 #!/bin/bash
+# this script downloads all necessary requirements for the workshop and puts them in a directory structure 
+# that can be written to a usbkey
 PIP=/usr/local/bin/pip
 WGET=/usr/local/bin/wget
 DOWNLOADDIR=./usbdrive/requirements/
@@ -7,7 +9,7 @@ TARGETFILES=./usbdrive
 COMPASSDIR=./usbdrive/mongodb/compass
 MONGODBDIR=./usbdrive/mongodb/server
 PYTHONDIR=./usbdrive/python
-REQUIREMENTSFILE=./usbdrive/requirements.txt
+REQUIREMENTSFILE=./requirements.txt
 $PIP download -d $DOWNLOADDIR --find-links $DOWNLOADDIR --platform :all: --no-deps -r $REQUIREMENTSFILE
 for ddir in $DOWNLOADDIR $COMPASSDIR $MONGODBDIR $PYTHONDIR ; do
    mkdir -p $ddir

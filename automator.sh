@@ -5,7 +5,7 @@
 RSYNC=/usr/local/bin/rsync
 RSYNCOPT=-avhs
 LOGFILE=~/projects/university-courses/m220p/rsync.log
-SOURCE=~/projects/university-courses/m220p/usbdrive/*
+SOURCE=/Users/mlynn/projects/university-courses/m220p/repo1/europython2019/usbdrive
 TARGET=europython
 VOLUMES=/Volumes/NO NAME
 
