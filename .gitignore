@@ -1,4 +1,10 @@
 # Byte-compiled / optimized / DLL files
+usbdrive/requirements/*
+usbdrive/mongodb/*gz
+usbdrive/mongodb/compass/*.gz
+usbdrive/mongodb/server/*.gz
+usbdrive/python/*
+*.whl
 __pycache__/
 *.py[cod]
 *$py.class
