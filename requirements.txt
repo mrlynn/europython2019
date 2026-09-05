@@ -8,7 +8,7 @@ pytest-flask==0.10.0
 Flask-Cors==3.0.3
 flask-jwt-extended==3.7.0
 faker==0.8.13
-jupyter==1.0.0
+jupyter==1.1.1
 jupyter-client==5.2.4
 jupyter-console==6.0.0
 jupyter-core==4.4.0
